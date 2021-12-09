@@ -13,6 +13,12 @@ class Main {
     }
 
     static int lengthOfMaxSubstring(String s) {
+        if (s.length() == 1)
+            return 1;
+
+        if (s.length() == 2)
+            return 2;
+
         StringBuilder result = new StringBuilder();
         int start = 0;
         String substring;
